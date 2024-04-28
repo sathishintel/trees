@@ -70,4 +70,5 @@ Node* search(Node *Current , int data , Node *Parent) {
             current = current->right
         }
     }
+    return NULL;
 }
