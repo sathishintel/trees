@@ -57,3 +57,17 @@ Node* findMinimum(Node* cur)
     }  
     return cur;  
 } 
+
+Node* search(Node *Current , int data , Node *Parent) {
+    while(current != NULL) {
+        if (current->data == data) {
+            return current;
+        }
+        parent = current;
+        if (data < current->data ) {
+            search(current->left,data,parent);
+        } else if(data > current->data) {
+            search(current->right,data,parent);
+        }
+    }
+}
