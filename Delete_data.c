@@ -65,9 +65,9 @@ Node* search(Node *Current , int data , Node *Parent) {
         }
         parent = current;
         if (data < current->data ) {
-            search(current->left,data,parent);
+            current = current->left;
         } else if(data > current->data) {
-            search(current->right,data,parent);
+            current = current->right
         }
     }
 }
